@@ -1,0 +1,9 @@
+.navigator{
+    font-size: 30px;
+    color: white;
+    width: 100vw;
+    background-color: aqua;
+}
+.navigator>p{
+    padding: 1%;
+}
