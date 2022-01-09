@@ -8,5 +8,12 @@
 .author{
     font-size: 13px;
     font-style: italic;
-    
+
+}
+.del{
+    position: relative;
+}
+.del>button{
+    position: relative;
+    top: 10%;
 }

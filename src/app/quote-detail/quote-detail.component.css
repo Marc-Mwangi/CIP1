@@ -9,9 +9,14 @@
     text-align: center;
 }
 .remove>button{
-    height: 30px;
-    width: 30px;
+    position: relative;
+    height: 2%;
+    width: 4%;
     color: white;
     background-color: black;
     border-radius: 100%;
+    z-index: 10;
+}
+.remove>button:hover{
+    background-color: red;
 }

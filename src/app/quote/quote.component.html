@@ -9,9 +9,8 @@
             <div class="author">
                 ~{{quote.author}}
             </div>
-    
-            <app-quote-detail *ngIf="quote.showDetails" [quote]="quote" > </app-quote-detail>
         </li>
+        <app-quote-detail class="del" *ngIf="quote.showDetails" [quote]="quote" (deleteIt)="quoteDelete($event,i)" > </app-quote-detail>
         
         
     </div>

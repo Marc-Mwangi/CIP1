@@ -1,5 +1,7 @@
+import { DeclareComponentTemplateInfo } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { Quote } from '../quote';
+import { QuoteDetailComponent } from '../quote-detail/quote-detail.component';
 
 @Component({
   selector: 'app-quote',
@@ -19,10 +21,15 @@ export class QuoteComponent implements OnInit {
   toggleDetails(index:number){
     this.quote[index].showDetails = !this.quote[index].showDetails;
   }
+  quoteDelete(deleteIt, index){
+    if (deleteIt){
+      this.quote.splice(index,1);
+    }
+  }
 
   constructor() { }
   
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
 }
