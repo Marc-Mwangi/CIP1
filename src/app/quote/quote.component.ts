@@ -7,9 +7,15 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
 
+  
   quote:Quote[]=[
-    new Quote ('bleh','blah','blih',0,0)
+    new Quote ('bleh','blah','blih',0,0),
+    new Quote('Mah', 'Meh', 'mih',0,0)
   ]
+  i:number;
+  toggleDetails(index:number){
+    this.quote[index].showDetails = !this.quote[index].showDetails;
+  }
 
   constructor() { }
   
