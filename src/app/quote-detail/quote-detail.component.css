@@ -3,6 +3,15 @@
     list-style: none;
     display: inline;
     padding: 15%;
-    
-
+    align-items: center;
+}
+.remove {
+    text-align: center;
+}
+.remove>button{
+    height: 30px;
+    width: 30px;
+    color: white;
+    background-color: black;
+    border-radius: 100%;
 }
