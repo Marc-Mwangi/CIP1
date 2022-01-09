@@ -3,8 +3,11 @@
 <br>
 <ul>
     <div *ngFor='let quote of quote; let i = index'>
-        <li class="container" (click)="toggleDetails(i)">{{quote.q}}</li>
-        <app-quote-detail *ngIf="quote.showDetails" [quote]="quote"></app-quote-detail>
+        <li class="container" (click)="toggleDetails(i)">
+            {{quote.q}}
+            <app-quote-detail *ngIf="quote.showDetails" [quote]="quote"></app-quote-detail>
+        </li>
+        
         
     </div>
 </ul>
