@@ -30,11 +30,17 @@ export class QuoteComponent implements OnInit {
       this.quote.splice(index,1);
     }
   }
+  voteUp(upVote,index){
+    if (upVote){
+      
+    }
+      
+  }
 
 
   constructor() { }
   
   ngOnInit() {
-  }
 
+  }
 }
