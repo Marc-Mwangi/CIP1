@@ -5,6 +5,10 @@
     <div *ngFor='let quote of quote; let i = index'>
         <li class="container" (click)="toggleDetails(i)">
             {{quote.q}}
+            <br>
+            <div class="author">
+                ~{{quote.author}}
+            </div>
             <app-quote-detail *ngIf="quote.showDetails" [quote]="quote"></app-quote-detail>
         </li>
         
