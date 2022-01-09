@@ -2,15 +2,18 @@
     position: relative;
     list-style: none;
     display: inline;
-    padding: 15%;
-    align-items: center;
+    padding: 10%;
+    text-align: center;
+}
+.details>ul{
+    text-align: center;
 }
 .remove {
     text-align: center;
 }
 .remove>button{
     position: relative;
-    height: 2%;
+    height: 4%;
     width: 4%;
     color: white;
     background-color: black;

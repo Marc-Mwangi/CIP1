@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { NaviComponent } from './navi/navi.component';
 import { QuoteComponent } from './quote/quote.component';
 import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     NaviComponent,
     QuoteComponent,
-    QuoteDetailComponent
+    QuoteDetailComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
