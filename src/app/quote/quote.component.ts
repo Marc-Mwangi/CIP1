@@ -16,7 +16,11 @@ export class QuoteComponent implements OnInit {
     new Quote('I think there should be holy war against yoga classes.', 'Lexi Alexander', 'Wim Wenders',0,0),
     new Quote('The world reveals itself to those who travel on foot.','Mike Nichols','Marc Mwangi',0,0),
     
-  ]
+  ];
+  addNewQuote(quote){
+    let quoteLength = this.quote.length;
+    this.quote.push(quote)
+  }
   i:number;
   toggleDetails(index:number){
     this.quote[index].showDetails = !this.quote[index].showDetails;
@@ -26,6 +30,7 @@ export class QuoteComponent implements OnInit {
       this.quote.splice(index,1);
     }
   }
+
 
   constructor() { }
   
