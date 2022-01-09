@@ -17,6 +17,9 @@ export class QuoteDetailComponent implements OnInit {
   vup(index:number){
     this.quote[index].up = this.quote.upVote++;
   }
+  vud(index:number){
+    this.quote[index].down = this.quote.downVote++;
+  }
   constructor() { }
   
   ngOnInit() {
