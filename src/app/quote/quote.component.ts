@@ -12,9 +12,9 @@ export class QuoteComponent implements OnInit {
 
   
   quote:Quote[]=[
-    new Quote ('The universe is monstrously indifferent to the presence of man.','Douglas Sirk','Uwe Boll',0,0),
-    new Quote('I think there should be holy war against yoga classes.', 'Lexi Alexander', 'Wim Wenders',0,0),
-    new Quote('The world reveals itself to those who travel on foot.','Mike Nichols','Marc Mwangi',0,0),
+    new Quote ('The universe is monstrously indifferent to the presence of man.','Douglas Sirk','Uwe Boll',0,0, new Date(2022,0,5)),
+    new Quote('I think there should be holy war against yoga classes.', 'Lexi Alexander', 'Wim Wenders',0,0,new Date(2022,0,5)),
+    new Quote('The world reveals itself to those who travel on foot.','Mike Nichols','Marc Mwangi',0,0,new Date(2022,0,5)),
     
   ];
   addNewQuote(quote){

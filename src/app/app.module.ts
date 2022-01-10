@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { NaviComponent } from './navi/navi.component';
 import { QuoteComponent } from './quote/quote.component';
 import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
-import { HighlightDirective } from './highlight.directive';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { FormsModule } from '@angular/forms';
 
@@ -16,7 +15,6 @@ import { FormsModule } from '@angular/forms';
     NaviComponent,
     QuoteComponent,
     QuoteDetailComponent,
-    HighlightDirective,
     QuoteFormComponent
   ],
   imports: [

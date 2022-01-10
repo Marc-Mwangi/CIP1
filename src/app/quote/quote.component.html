@@ -1,13 +1,16 @@
-<h1 class="text-center"> Today's Quotes </h1>
-<hr>
+<h1 class="text-center"> Recent Quotes </h1>
+<hr> 
 <br>
 <ul>
     <div *ngFor='let quote of quote; let i = index'>
-        <li class="container" (click)="toggleDetails(i)">
+        <li appHighlight class="container" (click)="toggleDetails(i)">
             {{quote.q}}
             <br>
             <div class="author">
                 ~{{quote.author}}
+            </div>
+            <div class="date">
+                {{quote.postDate|date}}
             </div>
         </li>
         <app-quote-detail class="del" *ngIf="quote.showDetails" [quote]="quote" (deleteIt)="quoteDelete($event,i)" > </app-quote-detail>
